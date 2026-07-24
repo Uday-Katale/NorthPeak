@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Preload fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <title>NorthPeak Digital - Premium Agency Solutions</title>
+    <meta name="description" content="NorthPeak Digital offers cutting-edge agency solutions to accelerate your digital growth. Explore our services, pricing, and proven track record." />
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="/style.css" />
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <!-- Global Background Design -->
+    <div class="bg-decorations" aria-hidden="true">
+      <div class="bg-grid"></div>
+      <div class="glow-orb orb-1"></div>
+      <div class="glow-orb orb-2"></div>
+      <div class="glow-orb orb-3"></div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="navbar" id="navbar">
+      <div class="container navbar-container">
+        <a href="#" class="logo" aria-label="NorthPeak Digital Home">NorthPeak<span class="text-accent">.</span></a>
+        
+        <nav class="nav-links" id="navLinks">
+          <a href="#services" class="nav-link">Services</a>
+          <a href="#results" class="nav-link">Results</a>
+          <a href="#pricing" class="nav-link">Pricing</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+        
+        <div class="nav-actions">
+          <button id="themeToggle" class="btn-icon" aria-label="Toggle Theme">
+            <i data-lucide="sun" id="themeIcon"></i>
+          </button>
+          <a href="#contact" class="btn btn-glass">Log in</a>
+          <a href="#contact" class="btn btn-gradient">Get Started</a>
+          <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Open Menu">
+            <i data-lucide="menu"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content reveal fade-up">
+          <div class="badge-premium">
+            <span class="badge-sparkle">✨</span> New: Enterprise AI Solutions
+          </div>
+          <h1 class="hero-title">
+            <span id="reveal-text" class="moving-text"></span><span class="cursor">|</span> <br />
+            <span id="reveal-bottom" class="text-gradient" style="display:inline-block; transition: all 0.4s ease;">digital products</span>
+          </h1>
+          <p class="hero-description">
+            We partner with ambitious brands to design, build, and scale world-class software. Experience unparalleled speed, reliability, and precision.
+          </p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-gradient btn-lg">
+              Start Building <i data-lucide="arrow-right" class="icon-sm"></i>
+            </a>
+            <a href="#services" class="btn btn-outline btn-lg">Explore Services</a>
+          </div>
+          
+          <div class="trust-section reveal fade-up delay-2">
+            <p>Trusted by innovative teams worldwide</p>
+            <div class="trust-badges">
+              <i data-lucide="compass"></i>
+              <i data-lucide="hexagon"></i>
+              <i data-lucide="triangle"></i>
+              <i data-lucide="circle-dashed"></i>
+              <i data-lucide="box"></i>
+            </div>
+          </div>
+        </div>
+        
+        <div class="hero-visual reveal fade-left delay-3" id="parallax-scene">
+          <div class="glass-card visual-card center-card" data-speed="0.05">
+            <div class="card-header">
+              <div class="dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+            </div>
+            <div class="card-body">
+              <img src="/assets/hero_illustration.png" alt="Digital Dashboard" class="hero-image" width="600" height="400" loading="eager" fetchpriority="high" />
+            </div>
+          </div>
+          <!-- Floating UI Elements -->
+          <div class="glass-card float-card float-1" data-speed="0.1">
+            <div class="icon-box bg-success-dim">
+              <i data-lucide="zap" class="text-success"></i>
+            </div>
+            <div>
+              <div class="float-title">99.9% Uptime</div>
+              <div class="float-desc">Global Edge Network</div>
+            </div>
+          </div>
+          <div class="glass-card float-card float-2" data-speed="-0.08">
+            <div class="icon-box bg-highlight-dim">
+              <i data-lucide="shield-check" class="text-highlight"></i>
+            </div>
+            <div>
+              <div class="float-title">Enterprise Grade</div>
+              <div class="float-desc">SOC2 Type II Certified</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section-padding" id="services">
+      <div class="container">
+        <div class="section-header reveal fade-up">
+          <h2 class="section-title">The NorthPeak <span class="text-gradient">Advantage</span></h2>
+          <p class="section-subtitle">A comprehensive suite of modern engineering and design services tailored to accelerate your growth.</p>
+        </div>
+        
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <div class="premium-card reveal fade-up delay-1">
+            <div class="card-glow"></div>
+            <div class="card-content">
+              <div class="icon-circle gradient-blue">
+                <i data-lucide="code-2"></i>
+              </div>
+              <h3 class="service-title">Modern Web Apps</h3>
+              <p class="service-desc">Lightning-fast, highly scalable applications built with cutting-edge frameworks and edge computing.</p>
+            </div>
+          </div>
+          <!-- Service 2 -->
+          <div class="premium-card reveal fade-up delay-2">
+            <div class="card-glow"></div>
+            <div class="card-content">
+              <div class="icon-circle gradient-purple">
+                <i data-lucide="pen-tool"></i>
+              </div>
+              <h3 class="service-title">UI/UX Engineering</h3>
+              <p class="service-desc">Obsessively detailed, pixel-perfect interfaces designed for maximum user engagement and conversion.</p>
+            </div>
+          </div>
+          <!-- Service 3 -->
+          <div class="premium-card reveal fade-up delay-3">
+            <div class="card-glow"></div>
+            <div class="card-content">
+              <div class="icon-circle gradient-cyan">
+                <i data-lucide="bar-chart-3"></i>
+              </div>
+              <h3 class="service-title">Growth Analytics</h3>
+              <p class="service-desc">Deep data integration and real-time dashboards to give you actionable insights into user behavior.</p>
+            </div>
+          </div>
+          <!-- Service 4 -->
+          <div class="premium-card reveal fade-up delay-1">
+            <div class="card-glow"></div>
+            <div class="card-content">
+              <div class="icon-circle gradient-emerald">
+                <i data-lucide="cloud"></i>
+              </div>
+              <h3 class="service-title">Cloud Architecture</h3>
+              <p class="service-desc">Resilient, auto-scaling infrastructure deployed seamlessly across global edge networks.</p>
+            </div>
+          </div>
+          <!-- Service 5 -->
+          <div class="premium-card reveal fade-up delay-2">
+            <div class="card-glow"></div>
+            <div class="card-content">
+              <div class="icon-circle gradient-blue">
+                <i data-lucide="smartphone"></i>
+              </div>
+              <h3 class="service-title">Mobile Experiences</h3>
+              <p class="service-desc">Native-feeling, performant cross-platform applications that live in your users' pockets.</p>
+            </div>
+          </div>
+          <!-- Service 6 -->
+          <div class="premium-card reveal fade-up delay-3">
+            <div class="card-glow"></div>
+            <div class="card-content">
+              <div class="icon-circle gradient-purple">
+                <i data-lucide="rocket"></i>
+              </div>
+              <h3 class="service-title">Technical SEO</h3>
+              <p class="service-desc">Algorithmic optimization and semantic architecture to dominate organic search results.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="results section-padding alt-bg" id="results">
+      <div class="container">
+        <div class="stats-grid reveal fade-up">
+          <div class="stat-card">
+            <div class="stat-number text-gradient" data-target="150">0</div>
+            <div class="stat-label">Projects Shipped</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number text-gradient" data-target="99.9">0</div>
+            <div class="stat-label">Uptime SLA (%)</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number text-gradient" data-target="50">0</div>
+            <div class="stat-label">Enterprise Clients</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number text-gradient" data-target="10">0</div>
+            <div class="stat-label">Avg. Response Time (ms)</div>
+          </div>
+        </div>
+
+        <div class="section-header mt-large reveal fade-up">
+          <h2 class="section-title">Trusted by <span class="text-gradient">Visionaries</span></h2>
+        </div>
+
+        <div class="testimonials-carousel reveal fade-up delay-2">
+          <!-- Testimonial 1 -->
+          <div class="glass-card testimonial-premium">
+            <i data-lucide="quote" class="quote-icon"></i>
+            <p class="t-text">"NorthPeak didn't just build our platform; they redefined our entire digital strategy. The attention to detail and performance optimization is simply world-class."</p>
+            <div class="t-author">
+              <img src="https://i.pravatar.cc/150?img=32" alt="Sarah Jenkins" class="avatar" width="48" height="48" loading="lazy" />
+              <div class="t-info">
+                <h4>Sarah Jenkins</h4>
+                <span>CMO at TechNova</span>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial 2 -->
+          <div class="glass-card testimonial-premium">
+            <i data-lucide="quote" class="quote-icon"></i>
+            <p class="t-text">"An absolute game-changer for our engineering velocity. Their architecture scales effortlessly and the UI polish is exactly what you'd expect from a top-tier agency."</p>
+            <div class="t-author">
+              <img src="https://i.pravatar.cc/150?img=11" alt="Michael Chang" class="avatar" width="48" height="48" loading="lazy" />
+              <div class="t-info">
+                <h4>Michael Chang</h4>
+                <span>Founder at Apex Retail</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing section-padding" id="pricing">
+      <div class="container">
+        <div class="section-header reveal fade-up">
+          <h2 class="section-title">Transparent, <span class="text-gradient">predictable</span> pricing</h2>
+          <p class="section-subtitle">Scale your infrastructure without the surprises. Built for modern teams.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- Starter -->
+          <div class="glass-card pricing-tier reveal fade-right delay-1">
+            <h3 class="tier-name">Starter</h3>
+            <div class="tier-price">$999<span class="period">/mo</span></div>
+            <p class="tier-desc">Essential tools to launch your digital presence.</p>
+            <ul class="tier-features">
+              <li><i data-lucide="check-circle-2"></i> Custom Landing Page</li>
+              <li><i data-lucide="check-circle-2"></i> Basic SEO Setup</li>
+              <li><i data-lucide="check-circle-2"></i> Monthly Analytics</li>
+              <li><i data-lucide="check-circle-2"></i> Email Support</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline btn-full">Choose Starter</a>
+          </div>
+          <!-- Growth (Highlighted) -->
+          <div class="premium-card pricing-tier popular reveal fade-up">
+            <div class="card-glow"></div>
+            <div class="card-content">
+              <div class="popular-badge-modern">Most Popular</div>
+              <h3 class="tier-name">Growth</h3>
+              <div class="tier-price">$2,499<span class="period">/mo</span></div>
+              <p class="tier-desc">Comprehensive suite for scaling organizations.</p>
+              <ul class="tier-features">
+                <li><i data-lucide="check-circle-2"></i> Full Web App Development</li>
+                <li><i data-lucide="check-circle-2"></i> Advanced SEO & Metrics</li>
+                <li><i data-lucide="check-circle-2"></i> Custom UI/UX Design System</li>
+                <li><i data-lucide="check-circle-2"></i> Priority Slack Support</li>
+                <li><i data-lucide="check-circle-2"></i> Weekly Strategy Syncs</li>
+              </ul>
+              <a href="#contact" class="btn btn-gradient btn-full">Upgrade to Growth</a>
+            </div>
+          </div>
+          <!-- Enterprise -->
+          <div class="glass-card pricing-tier reveal fade-left delay-1">
+            <h3 class="tier-name">Enterprise</h3>
+            <div class="tier-price">Custom</div>
+            <p class="tier-desc">Dedicated resources and unparalleled scale.</p>
+            <ul class="tier-features">
+              <li><i data-lucide="check-circle-2"></i> Dedicated Engineering Squad</li>
+              <li><i data-lucide="check-circle-2"></i> Custom Edge Architecture</li>
+              <li><i data-lucide="check-circle-2"></i> 24/7 SLA Support</li>
+              <li><i data-lucide="check-circle-2"></i> SOC2 Compliance Support</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline btn-full">Contact Sales</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section-padding" id="contact">
+      <div class="container contact-split">
+        <div class="contact-info reveal fade-right">
+          <h2 class="section-title">Ready to <span class="text-gradient">build</span>?</h2>
+          <p class="section-subtitle text-left">Get in touch with our team of experts to discuss your next big initiative.</p>
+          
+          <div class="contact-methods">
+            <div class="method-card glass-card">
+              <div class="icon-circle gradient-blue"><i data-lucide="mail"></i></div>
+              <div>
+                <h4>Chat with us</h4>
+                <p>hello@northpeak.digital</p>
+              </div>
+            </div>
+            <div class="method-card glass-card">
+              <div class="icon-circle gradient-purple"><i data-lucide="phone"></i></div>
+              <div>
+                <h4>Call our team</h4>
+                <p>+1 (800) 123-4567</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper glass-card reveal fade-left">
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group modern-input">
+                <label for="name">Full Name</label>
+                <div class="input-wrapper">
+                  <i data-lucide="user"></i>
+                  <input type="text" id="name" name="name" placeholder="John Doe" required>
+                </div>
+                <span class="error-message" id="nameError">Required field.</span>
+              </div>
+              
+              <div class="form-group modern-input">
+                <label for="email">Work Email</label>
+                <div class="input-wrapper">
+                  <i data-lucide="mail"></i>
+                  <input type="email" id="email" name="email" placeholder="john@company.com" required>
+                </div>
+                <span class="error-message" id="emailError">Valid email required.</span>
+              </div>
+            </div>
+            
+            <div class="form-group modern-input">
+              <label for="message">How can we help?</label>
+              <div class="input-wrapper">
+                <textarea id="message" name="message" rows="4" placeholder="Tell us about your project goals and timeline..." required></textarea>
+              </div>
+              <span class="error-message" id="messageError">Please provide details.</span>
+            </div>
+            
+            <button type="submit" class="btn btn-gradient btn-full btn-lg mt-4" id="submitBtn">
+              Send Message <i data-lucide="send" class="icon-sm"></i>
+            </button>
+            
+            <div class="success-message glass-card" id="successMessage" style="display: none;">
+              <i data-lucide="check-circle" class="text-success"></i>
+              <span>Message received. We'll be in touch within 24 hours.</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-col brand-col">
+          <a href="#" class="logo">NorthPeak<span class="text-accent">.</span></a>
+          <p>Designing the future of the web, one pixel at a time. High-performance software for high-growth companies.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+            <a href="#" aria-label="Github"><i data-lucide="github"></i></a>
+            <a href="#" aria-label="Linkedin"><i data-lucide="linkedin"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Product</h4>
+          <a href="#services">Features</a>
+          <a href="#results">Customers</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#">Changelog</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#">About</a>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Security</a>
+        </div>
+      </div>
+      <div class="container">
+        <div class="footer-bottom">
+          <p>&copy; <span id="year"></span> NorthPeak Digital. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Link to external JS -->
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
