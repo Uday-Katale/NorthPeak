@@ -1,5 +1,7 @@
+import { createIcons, icons } from 'lucide';
+
 // Initialize Lucide Icons
-lucide.createIcons();
+createIcons({ icons });
 
 // Hero Title Animation (Infinite Typewriter with Synced Bottom Text)
 const revealText = document.getElementById('reveal-text');
@@ -66,7 +68,7 @@ if (savedTheme === 'light') {
   document.documentElement.classList.add('light-mode');
   if (themeToggle) {
     themeToggle.innerHTML = `<i data-lucide="moon" id="themeIcon"></i>`;
-    lucide.createIcons();
+    createIcons({ icons });
   }
 }
 
@@ -78,7 +80,7 @@ if (themeToggle) {
     
     // Update Icon by re-injecting the <i> tag so Lucide picks it up
     themeToggle.innerHTML = `<i data-lucide="${isLight ? 'moon' : 'sun'}" id="themeIcon"></i>`;
-    lucide.createIcons();
+    createIcons({ icons });
   });
 }
 

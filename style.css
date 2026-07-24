@@ -64,6 +64,13 @@
   --input-bg-focus: #FFFFFF;
 }
 
+/* Accessibility */
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -419,6 +426,7 @@ ul {
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-premium);
+  will-change: transform, backdrop-filter;
 }
 
 .visual-card {
@@ -490,6 +498,7 @@ ul {
   border-radius: var(--radius-lg);
   border: 1px solid var(--border-color);
   transition: var(--transition-smooth);
+  will-change: transform, backdrop-filter;
   z-index: 1;
 }
 

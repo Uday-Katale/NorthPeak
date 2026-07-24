@@ -12,8 +12,6 @@
     <meta name="description" content="NorthPeak Digital offers cutting-edge agency solutions to accelerate your digital growth. Explore our services, pricing, and proven track record." />
     <!-- Link to external CSS -->
     <link rel="stylesheet" href="/style.css" />
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
   </head>
   <body>
     <!-- Global Background Design -->
@@ -23,6 +21,7 @@
       <div class="glow-orb orb-2"></div>
       <div class="glow-orb orb-3"></div>
     </div>
+    <a href="#main-content" class="skip-link sr-only focusable">Skip to main content</a>
 
     <!-- Header / Navbar -->
     <header class="navbar" id="navbar">
@@ -49,7 +48,8 @@
       </div>
     </header>
 
-    <!-- Hero Section -->
+    <main id="main-content">
+      <!-- Hero Section -->
     <section class="hero" id="hero">
       <div class="container hero-container">
         <div class="hero-content reveal fade-up">
@@ -92,7 +92,7 @@
               </div>
             </div>
             <div class="card-body">
-              <img src="/assets/hero_illustration.png" alt="Digital Dashboard" class="hero-image" width="600" height="400" loading="eager" fetchpriority="high" />
+              <img src="/assets/hero_illustration.webp" alt="Digital Dashboard" class="hero-image" width="600" height="400" loading="eager" fetchpriority="high" />
             </div>
           </div>
           <!-- Floating UI Elements -->
@@ -231,7 +231,7 @@
             <div class="t-author">
               <img src="https://i.pravatar.cc/150?img=32" alt="Sarah Jenkins" class="avatar" width="48" height="48" loading="lazy" />
               <div class="t-info">
-                <h4>Sarah Jenkins</h4>
+                <h3 class="author-name">Sarah Jenkins</h3>
                 <span>CMO at TechNova</span>
               </div>
             </div>
@@ -243,7 +243,7 @@
             <div class="t-author">
               <img src="https://i.pravatar.cc/150?img=11" alt="Michael Chang" class="avatar" width="48" height="48" loading="lazy" />
               <div class="t-info">
-                <h4>Michael Chang</h4>
+                <h3 class="author-name">Michael Chang</h3>
                 <span>Founder at Apex Retail</span>
               </div>
             </div>
@@ -376,6 +376,7 @@
         </div>
       </div>
     </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
